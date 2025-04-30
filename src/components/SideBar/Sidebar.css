@@ -35,6 +35,7 @@
 .sidebar .recent {
     display: flex;
     flex-direction: column;
+    animate: fadeIn 1.5s;
 }
 
 .sidebar .recent-title{
@@ -67,4 +68,39 @@
 .sidebar .bottom-item {
     paddding-right: 10px;
     cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .sidebar{
+        width: 80px;
+    }
+
+    .sidebar .recent-title{
+        font-size: 14px;
+    }
+
+    .sidebar .new-chat{
+        display:flex;
+        flex-direction: column;
+        font-size: 12px;
+    }
+
+    .sidebar .new-chat .plus-icon{
+        width: 12px;
+    }
+
+    .bottom p{
+        display: none;
+    }
+
+    .recent-entry{
+        display:flex;
+        flex-direction: column;
+        font-size: 12px;
+    }
+
+    .recent-entry img{
+        display:none;
+    }
+    
 }

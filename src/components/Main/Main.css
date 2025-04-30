@@ -21,8 +21,8 @@
 
 .main-container {
     max-width: 900px;
-    margin:auto;
-
+    margin: auto;
+    padding: 0 20px;
 }
 
 .main .greet {
@@ -179,4 +179,62 @@
     font-size: 17px;
     font-weight: 300;
     line-height: 1.8;
+}
+
+
+
+@media (max-width: 600px) {
+    .main-bottom input {
+        flex:none;
+        width: 160px;
+    }
+    .search-box img {
+        width: 18px;
+    }
+    .search-box {
+        padding: 5px 10px;
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+    .search-box .icons{
+        gap: 4px;
+        min-width: fit-content;
+    }
+    .search-box input {
+        font-size: 16px;
+    }
+    .main .card {
+        height: 120px;
+    }
+    
+    .main-container {
+        padding: 0 15px; /* Add padding on both sides */
+    }
+    .loader {
+        width: 85%;
+    }
+    .loader hr {
+        height: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .main-bottom input {
+        width: 180px;
+    }
+    .search-box .icons{
+        gap: 2px;
+    }
+    .main .cards {
+        margin-bottom: 20px;
+    }
+    .main-container {
+        padding: 0 10px;
+    }
+    .search-box {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        border-radius: 2px;
+    }
 }
